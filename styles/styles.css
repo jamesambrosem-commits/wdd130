@@ -82,3 +82,7 @@ footer {
     text-align: center;
 
 }
+
+main {
+    max-width: 840px;
+}
