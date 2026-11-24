@@ -221,5 +221,14 @@ footer {
 
 .socialmedia img {
     width: 35px;
-    height: 35px;
+
+
+Limit the page width by combining the header,
+main,
+and footer elements and center the content on the display using an auto left-right margin. header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
 }
+
