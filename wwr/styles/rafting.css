@@ -45,10 +45,14 @@ footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 150px auto;
-    align-items: center;
     background-color: var(--primary-color);
+    color: #fff;
+    border-bottom: 4px solid var(--accent-color2);
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 header > img {
@@ -66,17 +70,23 @@ header nav {
 
 header nav ul {
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     list-style: none;
-    /* space-around OR gap: 1rem? any justify-content needed? */
 }
 
 header nav a {
-    /* padding? */
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: #fff;
     text-decoration: none;
-    color:
-        /* white or #fff - pick one */
-    ;
-    font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus-visible {
+    color: var(--primary-color);
+    background-color: var(--accent-color2);
 }
 
 h1,
@@ -106,7 +116,6 @@ article {
 
 .socialmedia a {
     text-decoration: none;
-    /* border: none? */
 }
 
 .socialmedia img {
@@ -121,9 +130,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    /* layout: flex row OR centered? */
-    /* spacing: padding/margin-top? */
-    /* visual: background/color/border-top? */
 }
 
 footer p,
@@ -162,12 +168,10 @@ footer .socialmedia {
     font-weight: bold;
     color: black;
     background-color: rgb(250, 253, 253);
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 }
 
 .hero article img {
+    float: right;
     width: 125px;
 }
 
