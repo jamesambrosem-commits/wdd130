@@ -149,9 +149,9 @@ footer .socialmedia {
 
 .hero > h1 {
     position: absolute;
-    top: 2rem;
-    left: 50%;
-    width: 90%;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 00px;
     text-align: center;
     opacity: 0.8;
