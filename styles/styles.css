@@ -1,137 +1,31 @@
 :root {
-    --primary: #1f4b99;
-    --dark: #222222;
-    --light: #f4f7fb;
-    --white: #ffffff;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: var(--dark);
-    background: var(--light);
-    line-height: 1.6;
-}
-
-header,
-main,
-footer {
-    width: min(90%, 960px);
-    margin-inline: auto;
-}
-
-nav {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-nav a {
-    color: var(--primary);
-    font-weight: bold;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-main {
-    background: var(--white);
-    padding: clamp(1.5rem, 4vw, 3rem);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-main img {
-    max-width: 150px;
-    height: auto;
-    border-radius: 50%;
-}
-
-p {
-    padding: 0;
-}
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    /*1*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-
-}
-
-aside img {
-    width: 200px;
-    height: auto;
-
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-
-}
-
-main {
-    max-width: 840px;
-}
-
-/* CSS Variables */
-:root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #0d3b66;
+    --secondary-color: #faf0ca;
+    --accent1-color: #1d3557;
+    --accent2-color: #457b9d;
 
     --heading-font: Georgia, serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body */
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    background-color: #ffffff;
 }
 
-/* Header, Main and Footer */
+/* Center page content */
 header,
 main,
 footer {
     width: 840px;
     margin: 0 auto;
-}
-
-/* Header */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-color);
-    padding: 15px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
 }
 
 /* Headings */
@@ -141,13 +35,39 @@ h2 {
     color: var(--primary-color);
 }
 
-/* General Spacing */
+/* General spacing */
 nav,
 p,
 section,
 article {
     margin: 16px;
     padding: 8px;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 150px;
+    padding: 10px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 /* Hero Section */
@@ -161,43 +81,41 @@ article {
     height: auto;
 }
 
-/* Hero Heading */
 .hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16px;
     text-align: center;
-    opacity: 0.85;
-    background-color: var(--accent1-color);
+    padding: 16px;
+    background-color: rgba(29, 53, 87, 0.8);
     color: white;
 }
 
-/* Hero Article */
+/* Mission Article */
 .hero article {
     position: absolute;
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: var(--secondary-color);
-    color: #000;
-    padding: 15px;
-    opacity: 0.95;
+    background-color: rgba(250, 240, 202, 0.9);
+    color: black;
 }
 
-/* Article Image */
 .hero article img {
     float: right;
     width: 125px;
-    height: auto;
-    margin: 10px;
+    margin-left: 15px;
+    border: 2px solid var(--accent1-color);
 }
 
-/* History and Adventure Sections */
-.history,
-.adventure {
-    padding: 20px;
+/* Sections */
+section {
     text-align: center;
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -205,30 +123,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color);
-    color: white;
+    border-top: 1px solid #cccccc;
+    margin-top: 20px;
 }
 
 /* Social Media */
-.socialmedia {
-    display: flex;
-    gap: 15px;
-}
-
 .socialmedia a {
     text-decoration: none;
 }
 
 .socialmedia img {
-    width: 35px;
-
-
-Limit the page width by combining the header,
-main,
-and footer elements and center the content on the display using an auto left-right margin. header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+    width: 32px;
+    margin: 5px;
 }
-
